@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { post } from "../services/service";
 
 
  const Login = () => {
@@ -6,7 +7,7 @@ import React, { useState } from "react";
  const [password,setPassword] = useState(null)
  const [username,setUsername] = useState(null)
  const handleUsernameChange = (username) =>{ 
-    // console.log(username)
+    console.log(username)
     setUsername(username)
  }
 
@@ -16,7 +17,7 @@ import React, { useState } from "react";
     console.log(password)
  }
  const handlePasswordChange = (password) =>{
-//   console.log(password)
+  console.log(password)
   setPassword(password)
  }
   return (
@@ -37,6 +38,7 @@ import React, { useState } from "react";
 </form>
 </div> 
 )};
+
 
 
 export default Login;

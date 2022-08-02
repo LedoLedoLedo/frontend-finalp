@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
   const Navbar = ()=>{
@@ -13,7 +14,9 @@ import React from "react";
     </div>
     
     <div class="button-wrapper">
-      <button>Contact Us</button>
+    <Link to="/search">
+      <button>Search Zip</button>
+      </Link>
     </div>
   </nav>
     

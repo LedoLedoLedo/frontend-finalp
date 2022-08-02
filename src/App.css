@@ -48,7 +48,7 @@ h1{
 
 /* Bordered form */
 form {
-  border: 3px solid #f1f1f1;
+  /* border: 3px solid #f1f1f1; */
 }
 
 /* Full-width inputs */
@@ -70,7 +70,7 @@ button {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 50%;
+  width: 20%;
 }
 
 /* Add a hover effect for buttons */
@@ -86,10 +86,10 @@ button:hover {
 } */
 
 /* Center the avatar image inside this container */
-.imgcontainer {
+/* .imgcontainer {
   text-align: center;
   margin: 24px 0 12px 0;
-}
+} */
 
 /* Avatar image */
 /* img.avatar {
@@ -123,7 +123,7 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 50px;
+  height: 30px;
   justify-content: space-between;
   /* align-content: center; */
   position: sticky;
@@ -151,4 +151,30 @@ p {
   justify-content: space-between;
   align-items: center;
   width: 15%;
+}
+
+.searchPage {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.eventContainer {
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.eventCard {
+  border: 2px solid #fff;
+  border-radius: 20px;
+  background-color: rgba(255,255,255,0.25);
+  width: 300px;
+  height: 500px;
+  overflow: scroll;
 }
