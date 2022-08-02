@@ -57,6 +57,7 @@ const Search = ()=> {
         {/* Figure out how to add text to ternary and what keys to use so doesn't repeat. */}
           <h1 key={i}>{event.name}</h1> 
           <img src={event.images[1].url} alt="event"/>
+          <a href={event.url}> Buy Ticket </a>
           <span className="eventStatus" key={i}> {event.dates.status.code ? event.dates.status.code : "" } </span>
           <span className="eventDate" key={i}> {event.dates.start.localDate ? event.dates.start.localDate : "" }</span>
           <span className="eventStart" key={i}> {event.dates.start.localTime ? event.dates.start.localTime : ""} </span>    
