@@ -14,8 +14,8 @@ import { Link } from "react-router-dom";
     </div>
     
     <div class="button-wrapper">
-    <Link to="/search">
-      <button>Search Zip</button>
+    <Link to="/signup">
+      <button>Log in</button>
       </Link>
     </div>
   </nav>

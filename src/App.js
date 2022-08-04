@@ -5,8 +5,12 @@ import Home from "./components/Home"
 import {Routes,Route, Link, } from 'react-router-dom';
 import Search from './components/Search';
 import {BrowserRouter} from 'react-router-dom'
+import Signup from "./components/Signup";
 import CreatePost, { Post } from './components/PostSection'
 import NotFound from "./components/NotFound";
+import Login from "./components/Login";
+import AllPosts from './components/AllPosts';
+
 
 function App() {
   const [data, setData] = React.useState(null);
@@ -23,6 +27,10 @@ function App() {
      <Route path="/" element={<Home/>}></Route>
      <Route path="/search" element={<Search/>}></Route>
      <Route path="/posts" element={<CreatePost/>}></Route>
+     <Route path="/login" element={<Login />} />
+     <Route path="/signup" element={<Signup />} />
+     <Route path="/all" element={<AllPosts />} />
+
     {/* <p>{!data ? "Loading..." : data}</p> */}
     <Route path="*" element={<NotFound />} />
     </Routes>

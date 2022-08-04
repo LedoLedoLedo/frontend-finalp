@@ -38,8 +38,12 @@
 }
 
 body{
-  background: rgb(2,0,36);
+  background-color: rgb(2,0,36);
   background: linear-gradient(80deg, rgba(2,0,36,1) 0%, rgba(121,63,9,1) 36%, rgba(0,212,255,1) 100%);
+  /* background-image:url(./assets/concertAppPic.jpeg); */
+  position: relative;
+  background-repeat: no-repeat;
+  /* background-size: 50vw 50vh */
 }
 h1{
   color:white;

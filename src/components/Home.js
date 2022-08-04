@@ -8,9 +8,10 @@ import Search from "./Search";
 
     return(
         <div>
+        <Search/>
         <Navbar/>
         <Widget/>
-        <Login/> 
+        {/* <Login/>  */}
         </div>
     )
  }
