@@ -7,11 +7,17 @@ import Search from "./Search";
  const Home = ()=> {
 
     return(
-        <div>
-        <Search/>
-        <Navbar/>
-        <Widget/>
-        {/* <Login/>  */}
+        <div className="wholePage">
+            <Navbar/>
+            <div className="heroImage">
+                <article className="textWrapper">
+                    <h1>Find <br/> where  <br/> it's at</h1>
+                    <p>All your local events in one place</p>
+                </article>
+            </div>
+            <Search/>
+            {/* <Widget/>  */}
+            {/* <Login/>  */}
         </div>
     )
  }
@@ -20,4 +26,4 @@ import Search from "./Search";
 
 
 
-export default Home
+export default Home;
