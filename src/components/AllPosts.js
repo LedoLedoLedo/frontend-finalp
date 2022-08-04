@@ -1,14 +1,15 @@
 import React from "react";
-import { get } from "../services/service";
-import { useParams, Link } from "react-router-dom";
+import { get,remove } from "../services/service";
+import { useParams, Link, useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 const AllPosts = () => {
   const [posts, setPosts] = React.useState([]);
   const [status, setStatus] = React.useState("");
-
+  const navigate = useNavigate
   React.useEffect(() => {
     getAllPosts();
-  });
+  },[]);
 
   const getAllPosts = async () => {
     try {
@@ -17,6 +18,10 @@ const AllPosts = () => {
     } catch (err) {
       setStatus(err.message);
     }
+    };
+    const deletePost = async (postId) => {
+      let response = await remove (`/posts/delete/${postId}`);
+      console.log(response.data)
   };
 
   return (
@@ -26,14 +31,21 @@ const AllPosts = () => {
       {posts.map((post) => {
         return (
           <div>
-            <h3>{post.content}</h3>
-            <p>
-              Created by:{" "}
+           <p>
+              {/* Created by:{post.creatorId.username} */}
               <Link to={`/users/${post.creatorId._id}`}>
-                {post.creatorId.username}
-              </Link>
+                {post.creatorId.username} 
+                
+              </Link> 
             </p>
+            <h3>{post.content}</h3>
+            <button
+                className="delete"
+                onClick={() => {
+                  deletePost(post._id);
+                }} > Delete </button>
           </div>
+          
         );
       })}
     </div>

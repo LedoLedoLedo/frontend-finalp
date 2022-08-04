@@ -13,6 +13,7 @@ import { Link } from "react-router-dom";
         <Link to="/signup">
           Login
         </Link>
+        <Link to='about'> About Us</Link>
       </nav>   
     )
   }

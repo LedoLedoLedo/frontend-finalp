@@ -30,7 +30,7 @@ const Signup = () => {
   };
 
   return (
-    <div>
+    <div className="signUpPage">
       <h2>Create an Account</h2>
       <form onSubmit={create}>
         <label>username</label>

@@ -10,6 +10,9 @@ import CreatePost, { Post } from './components/PostSection'
 import NotFound from "./components/NotFound";
 import Login from "./components/Login";
 import AllPosts from './components/AllPosts';
+import MyProfile from './components/MyProfile';
+import About from './components/About'
+import ViewProfile from './components/ViewProfile';
 
 
 function App() {
@@ -30,6 +33,9 @@ function App() {
      <Route path="/login" element={<Login />} />
      <Route path="/signup" element={<Signup />} />
      <Route path="/all" element={<AllPosts />} />
+     <Route path="/profile" element={<MyProfile />} />
+     <Route path="/About" element={<About />} />
+     <Route path="/users/:userId" element={<ViewProfile />} />
 
     {/* <p>{!data ? "Loading..." : data}</p> */}
     <Route path="*" element={<NotFound />} />
