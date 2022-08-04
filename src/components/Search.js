@@ -2,6 +2,7 @@ import React from "react";
 // import { Link } from "react-router-dom";
 import axios from "axios"
 import { useState, useEffect } from "react";
+import searchIcon from "../assets/search-icon.png";
 
 const Search = ()=> {
 
@@ -47,8 +48,10 @@ const Search = ()=> {
 
   return(
   <div className="searchPage">
-    <input onChange={(e)=>{handleSearchChange(e.target.value)}} type="text" placeholder=" Search zipcode...."/>   
-    <button onClick={search} type="submit">Search</button>   
+    <div className="searchWrapper">
+      <input onChange={(e)=>{handleSearchChange(e.target.value)}} type="text" placeholder=" Search zipcode...."/>   
+      <button onClick={search} type="submit"><img src={searchIcon} alt="magnifying glass icon signifying a search bar"/></button>   
+    </div>
     <div className="eventContainer">
       {events.map((event, i) => {
       console.log (event)
@@ -68,6 +71,7 @@ const Search = ()=> {
             
             <span className="eventInfo" key={i}> {event.info ? event.info : "" } </span>
             <span className="eventDescription" key={i}> {event.description ? event.description : "" } </span>
+            <span className="spacerSpan">This is Hidden Space</span>
           </div>
           <div className="linkWrapper">
             <a href={event.url}> Buy Ticket </a>

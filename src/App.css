@@ -199,7 +199,7 @@ p {
 
 .eventCard a {
   color: #fff;
-  background-color: #000;
+  background-color: #0D0640;
   border-radius: 5px;
   padding: 10px 85px;
 }
@@ -210,8 +210,9 @@ p {
   overflow: scroll;
 }
 
-.eventCardTop span:last-of-type {
-  padding-bottom: 20px;
+span.spacerSpan {
+  padding-bottom: 25px;
+  visibility: hidden;
 }  
 
 .img-wrapper img {
@@ -264,4 +265,60 @@ p {
   margin-left: 0px;
 }
 
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  /* padding: 12px 20px; */
+  margin: 0 5px;
+  display: inline-block;
+  /* border: 1px solid #ccc; */
+  box-sizing: border-box;
+  /* opacity: 0.5; */
+}
 
+/* Set a style for all buttons */
+button {
+  background-color: #0D0640;
+  /* border: 2px solid rgb(229 255 0); */
+  color: #fff;
+  padding: 14px 20px;
+  margin: 0 5px;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+/* Add a hover effect for buttons */
+button:hover, .eventCard a:hover, button:focus, .eventCard a:focus {
+  opacity: 0.8;
+  /* box-shadow: rgb(229 255 0) 0px 0px 0px 2px inset, rgb(0 0 0) 10px -10px 0px -3px, rgb(229 255 0) 10px -10px, rgb(0 0 0) 20px -20px 0px -3px, rgb(229 255 0) 20px -20px, rgb(0 0 0) 30px -30px 0px -3px, rgb(229 255 0) 30px -30px, rgb(0 0 0) 40px -40px 0px -3px, rgb(0 212 255) 40px -40px; */ 
+}
+
+.searchWrapper {
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  max-height: 70px;
+  margin-bottom: 5vw;
+}
+
+.searchWrapper input[type=text] {
+  border: 4px solid #0D0640;
+  border-radius: 10px;
+}
+
+.searchWrapper button {
+  background-color: #0D0640;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 1em;
+  width: 5vw;
+  min-width: 60px;
+}
+
+button img {
+  width: 80%;
+}

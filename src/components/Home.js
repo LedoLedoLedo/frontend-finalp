@@ -16,7 +16,7 @@ import Search from "./Search";
                 </article>
             </div>
             <Search/>
-            {/* <Widget/>  */}
+            <Widget/> 
             {/* <Login/>  */}
         </div>
     )
